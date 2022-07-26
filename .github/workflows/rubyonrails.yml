@@ -50,5 +50,4 @@ jobs:
         with:
           rubocop_version: latest
           github_token: ${{ secrets.github_token }}
-          rubocop_extensions: rubocop-rails:gemfile rubocop-rspec:gemfile
           reporter: github-pr-review 
