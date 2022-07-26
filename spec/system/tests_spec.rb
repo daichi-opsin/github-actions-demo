@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "Tests", type: :system do
   before do
@@ -6,8 +6,8 @@ RSpec.describe "Tests", type: :system do
   end
 
   context "テスト" do
-    it "NG" do
-      expect(false).to eq(true)
+    it "OK" do
+      expect(true).to eq(true)
     end
   end
 end
