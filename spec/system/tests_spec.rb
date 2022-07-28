@@ -8,8 +8,8 @@ RSpec.describe "Tests", type: :system do
   end
 
   context "テスト" do
-    it "OK" do
-      expect(true).to eq(true)
+    it "NG" do
+      expect(false).to eq(true)
     end
   end
 end
