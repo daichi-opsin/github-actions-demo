@@ -45,8 +45,6 @@ jobs:
         run: bundle exec bundler-audit update
       - name: Security audit application code
         run: bundle exec brakeman -q -w2
-      - name: rubocop
-        run: bundle exec rubocop
       - name: rubocop and reviewdog
         uses: reviewdog/action-rubocop@v2
         with:
@@ -54,3 +52,6 @@ jobs:
           rubocop_extensions: rubocop-rails:gemfile rubocop-rspec:gemfile
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review 
+      - name: rubocop
+        run: bundle exec rubocop
+        
